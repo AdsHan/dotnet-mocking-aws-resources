@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32901.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docker", "docker", "{DA83B85B-42F1-4B44-B77C-F337FFFEF736}"
+	ProjectSection(SolutionItems) = preProject
+		docker\docker_infrastructure.yml = docker\docker_infrastructure.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{EE55A89D-59EA-437D-87CE-7F6896F1E990}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmazonQueue.LocalStack", "src\AmazonQueue.LocalStack\AmazonQueue.LocalStack.csproj", "{17310DA1-CE43-476F-A1E6-62F403C6F309}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{17310DA1-CE43-476F-A1E6-62F403C6F309}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17310DA1-CE43-476F-A1E6-62F403C6F309}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17310DA1-CE43-476F-A1E6-62F403C6F309}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17310DA1-CE43-476F-A1E6-62F403C6F309}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{17310DA1-CE43-476F-A1E6-62F403C6F309} = {EE55A89D-59EA-437D-87CE-7F6896F1E990}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4DA21CB1-63CE-4DAE-A241-CA1142128173}
+	EndGlobalSection
+EndGlobal

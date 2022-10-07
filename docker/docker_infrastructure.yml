@@ -1,0 +1,25 @@
+version: '3.4'
+
+services:
+
+    localstack:
+        image: localstack/localstack:latest
+        container_name: localstack
+        restart: always
+        environment:
+            # Serviços
+            - SERVICES=sqs
+            - DEBUG=1            
+            # Demais variáveis
+            - DATA_DIR=/tmp/localstack/data            
+        volumes:
+            - ./.localstack:/tmp/localstack
+            - /var/run/docker.sock:/var/run/docker.sock
+        ports:            
+            - 4566:4566            
+        networks:
+            - localstack-network
+            
+networks:
+    localstack-network:
+        driver: bridge
