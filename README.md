@@ -7,4 +7,4 @@ Demonstração de como podemos usar o LocalStack para simular a AWS localmente 
 - A infraestrutura da aplicação será criada através do docker compose /docker/docker_infrastructure.yml.
 
 # Sobre
-Este projeto foi desenvolvido por Anderson Hansen sob [MIT license](LICENSE).
+Este projeto foi desenvolvido por Anderson Hansen.
